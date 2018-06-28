@@ -1,0 +1,43 @@
+/****************************/
+/** Font-Face **/  
+/****************************/
+
+@font-face {
+	font-family: 'Open Sans Condensed';
+	src: url('../fonts/OpenSansCondensed-LightItalic.eot');
+	src: url('../fonts/OpenSansCondensed-LightItalic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSansCondensed-LightItalic.woff2') format('woff2'),
+         url('../fonts/OpenSansCondensed-LightItalic.woff') format('woff'),
+         url('../fonts/OpenSansCondensed-LightItalic.svg#OpenSansCondensed-LightItalic') format('svg');
+	font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: 'Open Sans Condensed';
+	src: url('../fonts/OpenSansCondensed-Light.eot');
+	src: url('../fonts/OpenSansCondensed-Light.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSansCondensed-Light.woff2') format('woff2'),
+         url('../fonts/OpenSansCondensed-Light.woff') format('woff'),
+         url('../fonts/OpenSansCondensed-Light.svg#OpenSansCondensed-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('../fonts/OpenSansCondensed-Bold.eot');
+    src: url('../fonts/OpenSansCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSansCondensed-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSansCondensed-Bold.woff') format('woff'),
+        url('../fonts/OpenSansCondensed-Bold.svg#OpenSansCondensed-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@mixin font1-italic() 			{ font-family: 'Open Sans Condensed';  font-weight: 300; 	font-style: normal; }
+
+@mixin font1-light() 			{ font-family: 'Open Sans Condensed';  font-weight: 300; 	font-style: normal; }
+
+@mixin font1-bold() 			{ font-family: 'Open Sans Condensed';  font-weight: bold; 	font-style: normal; }

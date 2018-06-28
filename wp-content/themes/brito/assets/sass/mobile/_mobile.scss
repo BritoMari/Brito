@@ -1,0 +1,272 @@
+html {
+    & > body {
+		@media(max-width: 1199px) {
+			
+			.topo .logo-mobile {
+				display: block;
+				width: 88px;
+				height: auto;
+				margin-top: -15px;
+				img {
+					width: 100%;
+    				display: block;
+				}
+            }
+		}
+
+        @media(max-width: 991px) {
+			.topo .custom-logo-link {
+				display: none !important;
+			}
+			p {
+				font-size: 14px !important;
+			}
+			.titulo11 {
+				font-size: 20px;
+			}
+			.titulo1 {
+				font-size: 25px;
+			}
+			.titulo2 {
+				font-size: 25px;
+			}
+			
+			&.home {
+                padding-top: 0px;
+
+                .topo.transparent {
+					transition: all 500ms ease;
+                    background: transparent;
+                
+					.custom-logo-link {
+						transition: all 500ms ease;
+						display: none;
+					}
+					.logo-mobile {
+						transition: all 500ms ease;
+						display: none;
+					}
+            	}
+			}
+
+			.topo .logo-mobile {
+				display: block;
+				width: 88px;
+				height: auto;
+				margin-top: -15px;
+            }
+
+			.topo {
+				transition: all 500ms ease;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: $cor-12;
+                z-index: 999;
+				height: 60px;
+				
+				.menu-lateral {
+					#menu-menu-lateral {
+						li {
+							width: 50px;
+							height: 50px;
+						}
+					}
+				}
+			}
+			
+			
+			.menu_geral ul.menu > li:before {
+				display: none;
+				
+			}
+			.menu_geral ul.menu {
+				border: inherit !important;
+			}
+			
+
+            .topo .custom-logo-link {
+				display: block;
+                width: 80px;
+                top: 0px;
+                left: 50%;
+                margin-left: -40px;
+            }
+
+            /*botao-menu*/
+            .abre_menu {
+                width: 25px;
+                height: 12px;
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                z-index: 2;
+            }
+
+            .abre_menu span,
+            .abre_menu span:before,
+            .abre_menu span:after {
+                width: 100%;
+                height: 4px;
+                display: block;
+                background: $cor-branca;
+                position: relative;
+            }
+
+            .abre_menu span:before {
+                content: "";
+                top: 8px;
+                position: absolute;
+            }
+
+            .abre_menu span:after {
+                content: "";
+                top: 16px;
+                position: absolute;
+            }
+
+            .topo .menu_geral .menu_links {
+                position: fixed;
+                top: 45px;
+				top: -200%;
+				right: 0;
+                width: 100%;
+                height: calc(100% - 45px);
+                z-index: 1;
+                display: flex;
+                justify-content: flex-end;
+                -webkit-transition: 0.5s ease-out;
+                -moz-transition: 0.5s ease-out;
+                -o-transition: 0.5s ease-out;
+				transition: 0.5s ease-out;
+				transition: all 500ms ease;
+            }
+
+            .topo .menu_geral .menu_links ul li {
+                display: block;
+				background: $cor-12;
+				opacity: 0.90;
+            }
+
+            .topo .menu_geral .menu_links ul li a {
+				text-align: left;
+				
+            }
+            
+			.topo .menu_geral ul li ul li a {
+				border-bottom: inherit;
+				text-transform: initial;
+				color: $cor-5 !important;
+				
+			}
+			.topo .menu_geral ul li ul li {
+				&.current_page_item a {
+					border-bottom: 1px solid $cor-branca;
+					width: 50%;
+					margin: 0 auto;
+				}
+			}
+			
+            .topo .menu_geral ul:not(.sub-menu) > li a {
+				text-align: center;
+				color: $cor-branca;
+				
+            }
+
+            .topo .menu_geral .menu_links > ul {
+                width: 250px;
+            }
+
+            .menu_links {
+                margin-top: 0;
+                padding-top: 0;
+                border-top: 0;
+			}
+			
+			.menu-menu-principal-container {
+				width: 100%;
+				z-index: 9999999999;
+				background: $cor-12;
+				opacity: 0.90;
+			}
+
+            .menu_geral .menu_links ul.menu {
+                padding-top: 0;
+                border-top: 0px;
+            }
+
+            .topo input#menu:checked ~ .menu_geral .menu_links {
+				top: 60px;
+				right: 0%;
+            }
+
+            .menu_geral ul li ul {
+                position: relative;
+                visibility: visible;
+                background: transparent;
+				opacity: 1;
+				padding: 10px 0;
+				margin-top: 0;
+			}
+
+			.menu_geral ul.menu_info li a {
+				padding: 1.5%;
+			}
+
+            .menu_geral .menu-tel {
+                display: none;
+			}
+			
+			/*Rodapé*/
+            .footer{
+				text-align: center;
+				.container {
+					.footer-container {
+						.footer-logo {
+							display: none;
+						}
+						.footer-menu {
+							display: none;
+						}
+						.footer-endereco {
+							border-left: inherit;
+						}
+					}
+				}
+			}
+			
+			.empreendimentos-slide {
+				height: auto;
+				.part-noticias {
+					.img-wp {
+						a {
+							.img-wp {
+								height: 260px;
+							}
+						}
+					}
+					.swiper-empreendimentos-slide {
+						.swiper-button-prev {
+							top: 8% !important;
+							
+							.svg-inline--fa {
+								height: 260px;
+							}
+						}
+						
+						.swiper-button-next {
+							top: 8% !important;
+							
+							.svg-inline--fa {
+								height: 260px;
+							}
+						}
+					}
+				}
+			}
+
+			
+        }
+    }
+}
