@@ -9,7 +9,7 @@
 			.feito-por {
 				text-align: center;
 				.texto {
-					@include font1-light;
+					@include font1-italic;
 					font-size: 18px;
 				}
 				.svg-inline--fa {

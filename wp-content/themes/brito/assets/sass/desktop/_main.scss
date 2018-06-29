@@ -26,19 +26,6 @@ p {
 	@include font1-bold();
 }
 
-.titulo11 {
-	font-size: 30px;
-	color: $cor-branca;
-	text-transform: uppercase;
-	@include font1-bold();
-	height: 63px;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: space-around;
-	background: $cor-12;
-}
-
 .titulo2 {
 	font-size: 35px;
 	color: $cor-12;
@@ -205,228 +192,41 @@ main.home {
 		}
 	}
 
-	.empreendimentos {
-		.menu-empreendimentos {
-			margin: 10px 0 15px 0;
-			.empreendimento-menu {
-				list-style: none;
-				flex-wrap: wrap;
-				width: 900px;
-				max-width: 100%;
-				margin: 0 auto;
-				justify-content: center;
-				display: flex;
-				li {
-					background: $cor-12;
-					width: 23%;
-					/*min-width: 270px;*/
-					height: 37px;
-					text-transform: uppercase;
-					transition: all 500ms ease;
-					margin: 10px 1px;
-					opacity: 0.7;
-					cursor: pointer;
-					
-					a {
-						color: $cor-branca;
-						font-size: 18px;
-						display: flex;
-						height: 100%;
-						align-items: center;
-						justify-content: space-around;	
-					}
-					&:hover {
-						opacity: inherit;
-					}
-				}
-				.ativo {
-					opacity: inherit;
-				}
-			}
-			
-		}
-		.empreendimento-item {
-			display: none;
-			.swiper-empreendimento {
-				position: relative;
-				.swiper-container {
-					.swiper-wrapper {
-						.swiper-slide {
-							.img-wp {
-								display: block;
-								width: 100%;
-								height: 765px;
-								opacity: 0.6;
-								background-position: center center;
-								background-repeat: no-repeat;
-								background-size: cover;
-								transition: all 500ms ease;
-								position: relative;
-								&:hover {
-									opacity: inherit;
-								}
-								.logo {
-									position: absolute;
-									left: 0;
-									width: 100%;
-									height: 100%;
-									display: flex;
-									justify-content: space-around;
-									z-index: 1;
-									align-items: center;
-									transition: all 500ms ease;
-									img {
-									}
-								}
-								
-							}
-						}
-					}
-				}
-				.swiper-button-prev {
-					z-index: 1;
-					position: absolute;
-					left: 0;
-					height: 88%;
-					top: 2.8%;
-					background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%…19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
-					
-					.svg-inline--fa {
-						color: $cor-branca;
-						font-size: 45px;
-						height: 765px;
-						width: 37px;
-						background: rgba(255, 255, 255, 0.65);
-						transition: all 500ms ease;
-						padding: 10px;
-						filter: brightness(50%);
-						&:hover {
-							background: $cor-2;
-						}
-					}
-				}
-				
-				.swiper-button-next {
-					z-index: 1;
-					position: absolute;
-					height: 88%;
-					top: 2.8%;
-					right: 10px;
-					background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%…2L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
-					
-					.svg-inline--fa {
-						color: $cor-branca;
-						font-size: 45px;
-						height: 765px;
-						width: 37px;
-						background: rgba(255, 255, 255, 0.65);
-						transition: all 500ms ease;
-						padding: 10px;
-						filter: brightness(50%);
-						&:hover {
-							background: $cor-2;
-						}
-					}
-				}
-			}
-		}
-		.ativo {
-			display: block;
-		}
-	}
-
-	.central-vendas {
-		position: relative;
-		.img-wp {
-			display: block;
-			width: 100%;
-			height: 597px;
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			filter: brightness(60%);
-			background-attachment: fixed;
-		}
-
-		.bloco {
-			position: absolute;
-			top: 70px;
-			right: 0px;
+	.about-me {
+		background: $cor-fundo-secundaria;
+		height: auto;
+		.container {
 			.titulo1 {
-				font-size: 25px;
-				text-align: center;
-				margin-bottom: 55px;
-				margin-right: 40px;
+				padding: 60px 0 15px 20px;
+				border-left: 3px solid #fff;
+				border-radius: 0 25px;
 			}
-			.fale-conosco {
-				width: 80%;
-				float: left;
-				display: block;
-				.wpcf7 {
-					.wpcf7-form {
-						p:nth-child(4) {
-							width: 59%;
-							display: block;
-							float: left;
-						}
-
-						p:nth-child(5) {
-							width: 39%;
-							display: block;
-							float: right;
-						}
-					}	
+			.conteudo-wp {
+				margin: 30px 0;
+				p {
+					font-size: 19px;
+					color: $cor-branca;
+					@include font1-italic;
 				}
-				
-				label {
-				  width: 100%;
-				  color: $cor-1;
-				  margin-bottom: 10px;
-				  font-size: 22px;
+			}
+			.imagem {
+				margin-left: 50px;
+				.img-wp {
+					display: block;
+					width: 100%;
+					height: 320px;
+					background-position: center center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					border: 25px solid $cor-fundo-terca;
+					filter: brightness(60%);
 				}
-				input {
-				  width: 100%;
-				  border: transparent;
-				  height: 34px;
-				  padding-left: 10px;
-				  font-size: 19px;
-				}
-				textarea {
-				  border: none;
-				  width: 100%;
-				  height: 101px;
-				  padding-left: 10px;
-				}
-				input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-				  color: $cor-1;
-				}
-				.wpcf7-submit {
-				  background-color: $cor-12;
-				  color: $cor-branca;
-				  font-size: 20px;
-				  text-transform: uppercase;
-				  font-weight: bold;
-				  display: block;
-				  margin: 0 auto;
-				  cursor: pointer;
-				   width: 20%;
-				   transition: all 500ms ease;
-				  &:hover {
-					background-color: $cor-9;
-				  }
-				}
-			  }
-		}
-		.img-wp2 {
-			display: block;
-			width: 100%;
-			height: 189px;
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			margin-bottom: 18px;
+			}
 		}
 	}
+	
+
+
 
 	.noticias {
 		margin-bottom: 20px;

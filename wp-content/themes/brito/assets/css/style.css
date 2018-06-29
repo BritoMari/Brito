@@ -282,19 +282,6 @@ html body {
     font-family: 'Open Sans Condensed';
     font-weight: bold;
     font-style: normal; }
-  html body .titulo11 {
-    font-size: 30px;
-    color: #FFF;
-    text-transform: uppercase;
-    font-family: 'Open Sans Condensed';
-    font-weight: bold;
-    font-style: normal;
-    height: 63px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-    background: #203162; }
   html body .titulo2 {
     font-size: 35px;
     color: #203162;
@@ -418,172 +405,32 @@ html body {
         font-weight: bold;
         font-style: normal;
         line-height: 46px; }
-  html body main.home .empreendimentos .menu-empreendimentos {
-    margin: 10px 0 15px 0; }
-    html body main.home .empreendimentos .menu-empreendimentos .empreendimento-menu {
-      list-style: none;
-      flex-wrap: wrap;
-      width: 900px;
-      max-width: 100%;
-      margin: 0 auto;
-      justify-content: center;
-      display: flex; }
-      html body main.home .empreendimentos .menu-empreendimentos .empreendimento-menu li {
-        background: #203162;
-        width: 23%;
-        /*min-width: 270px;*/
-        height: 37px;
-        text-transform: uppercase;
-        transition: all 500ms ease;
-        margin: 10px 1px;
-        opacity: 0.7;
-        cursor: pointer; }
-        html body main.home .empreendimentos .menu-empreendimentos .empreendimento-menu li a {
-          color: #FFF;
-          font-size: 18px;
-          display: flex;
-          height: 100%;
-          align-items: center;
-          justify-content: space-around; }
-        html body main.home .empreendimentos .menu-empreendimentos .empreendimento-menu li:hover {
-          opacity: inherit; }
-      html body main.home .empreendimentos .menu-empreendimentos .empreendimento-menu .ativo {
-        opacity: inherit; }
-  html body main.home .empreendimentos .empreendimento-item {
-    display: none; }
-    html body main.home .empreendimentos .empreendimento-item .swiper-empreendimento {
-      position: relative; }
-      html body main.home .empreendimentos .empreendimento-item .swiper-empreendimento .swiper-container .swiper-wrapper .swiper-slide .img-wp {
+  html body main.home .about-me {
+    background: #2c2727;
+    height: auto; }
+    html body main.home .about-me .container .titulo1 {
+      padding: 60px 0 15px 20px;
+      border-left: 3px solid #fff;
+      border-radius: 0 25px; }
+    html body main.home .about-me .container .conteudo-wp {
+      margin: 30px 0; }
+      html body main.home .about-me .container .conteudo-wp p {
+        font-size: 19px;
+        color: #FFF;
+        font-family: 'Open Sans Condensed';
+        font-weight: 300;
+        font-style: italic; }
+    html body main.home .about-me .container .imagem {
+      margin-left: 50px; }
+      html body main.home .about-me .container .imagem .img-wp {
         display: block;
         width: 100%;
-        height: 765px;
-        opacity: 0.6;
+        height: 320px;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        transition: all 500ms ease;
-        position: relative; }
-        html body main.home .empreendimentos .empreendimento-item .swiper-empreendimento .swiper-container .swiper-wrapper .swiper-slide .img-wp:hover {
-          opacity: inherit; }
-        html body main.home .empreendimentos .empreendimento-item .swiper-empreendimento .swiper-container .swiper-wrapper .swiper-slide .img-wp .logo {
-          position: absolute;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: space-around;
-          z-index: 1;
-          align-items: center;
-          transition: all 500ms ease; }
-      html body main.home .empreendimentos .empreendimento-item .swiper-empreendimento .swiper-button-prev {
-        z-index: 1;
-        position: absolute;
-        left: 0;
-        height: 88%;
-        top: 2.8%;
-        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%…19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E"); }
-        html body main.home .empreendimentos .empreendimento-item .swiper-empreendimento .swiper-button-prev .svg-inline--fa {
-          color: #FFF;
-          font-size: 45px;
-          height: 765px;
-          width: 37px;
-          background: rgba(255, 255, 255, 0.65);
-          transition: all 500ms ease;
-          padding: 10px;
-          filter: brightness(50%); }
-          html body main.home .empreendimentos .empreendimento-item .swiper-empreendimento .swiper-button-prev .svg-inline--fa:hover {
-            background: #51669B; }
-      html body main.home .empreendimentos .empreendimento-item .swiper-empreendimento .swiper-button-next {
-        z-index: 1;
-        position: absolute;
-        height: 88%;
-        top: 2.8%;
-        right: 10px;
-        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%…2L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E"); }
-        html body main.home .empreendimentos .empreendimento-item .swiper-empreendimento .swiper-button-next .svg-inline--fa {
-          color: #FFF;
-          font-size: 45px;
-          height: 765px;
-          width: 37px;
-          background: rgba(255, 255, 255, 0.65);
-          transition: all 500ms ease;
-          padding: 10px;
-          filter: brightness(50%); }
-          html body main.home .empreendimentos .empreendimento-item .swiper-empreendimento .swiper-button-next .svg-inline--fa:hover {
-            background: #51669B; }
-  html body main.home .empreendimentos .ativo {
-    display: block; }
-  html body main.home .central-vendas {
-    position: relative; }
-    html body main.home .central-vendas .img-wp {
-      display: block;
-      width: 100%;
-      height: 597px;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      filter: brightness(60%);
-      background-attachment: fixed; }
-    html body main.home .central-vendas .bloco {
-      position: absolute;
-      top: 70px;
-      right: 0px; }
-      html body main.home .central-vendas .bloco .titulo1 {
-        font-size: 25px;
-        text-align: center;
-        margin-bottom: 55px;
-        margin-right: 40px; }
-      html body main.home .central-vendas .bloco .fale-conosco {
-        width: 80%;
-        float: left;
-        display: block; }
-        html body main.home .central-vendas .bloco .fale-conosco .wpcf7 .wpcf7-form p:nth-child(4) {
-          width: 59%;
-          display: block;
-          float: left; }
-        html body main.home .central-vendas .bloco .fale-conosco .wpcf7 .wpcf7-form p:nth-child(5) {
-          width: 39%;
-          display: block;
-          float: right; }
-        html body main.home .central-vendas .bloco .fale-conosco label {
-          width: 100%;
-          color: #001550;
-          margin-bottom: 10px;
-          font-size: 22px; }
-        html body main.home .central-vendas .bloco .fale-conosco input {
-          width: 100%;
-          border: transparent;
-          height: 34px;
-          padding-left: 10px;
-          font-size: 19px; }
-        html body main.home .central-vendas .bloco .fale-conosco textarea {
-          border: none;
-          width: 100%;
-          height: 101px;
-          padding-left: 10px; }
-        html body main.home .central-vendas .bloco .fale-conosco input::-webkit-input-placeholder, html body main.home .central-vendas .bloco .fale-conosco textarea::-webkit-input-placeholder {
-          color: #001550; }
-        html body main.home .central-vendas .bloco .fale-conosco .wpcf7-submit {
-          background-color: #203162;
-          color: #FFF;
-          font-size: 20px;
-          text-transform: uppercase;
-          font-weight: bold;
-          display: block;
-          margin: 0 auto;
-          cursor: pointer;
-          width: 20%;
-          transition: all 500ms ease; }
-          html body main.home .central-vendas .bloco .fale-conosco .wpcf7-submit:hover {
-            background-color: #345DAA; }
-    html body main.home .central-vendas .img-wp2 {
-      display: block;
-      width: 100%;
-      height: 189px;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-bottom: 18px; }
+        border: 25px solid #F3A712;
+        filter: brightness(60%); }
   html body main.home .noticias {
     margin-bottom: 20px; }
     html body main.home .noticias .part-noticias {
@@ -922,7 +769,7 @@ html body {
         html body .footer .container .bloco .feito-por .texto {
           font-family: 'Open Sans Condensed';
           font-weight: 300;
-          font-style: normal;
+          font-style: italic;
           font-size: 18px; }
         html body .footer .container .bloco .feito-por .svg-inline--fa {
           padding-right: 0px;
