@@ -24,6 +24,9 @@ p {
 	color: $cor-branca;
 	text-transform: uppercase;
 	@include font1-bold();
+	padding: 60px 0 15px 20px;
+	border-left: 3px solid #fff;
+	border-radius: 0 25px;
 }
 
 .titulo2 {
@@ -148,14 +151,14 @@ main.home {
 			position: absolute;
 			top: 140px;
 			right: 52%;
-			color: $cor-fundo-terca;
+			color: $cor-amarelo;
 			font-size: 250px;
 		}
 		.icone-chave2 {
 			position: absolute;
 			top: 140px;
-			right: 21%;
-			color: $cor-fundo-terca;
+			right: 15%;
+			color: $cor-amarelo;
 			font-size: 250px;
 		}
 
@@ -173,7 +176,7 @@ main.home {
 					@include font1-bold();
 					line-height: 46px;
 					strong {
-						color: $cor-fundo-terca;
+						color: $cor-amarelo;
 					}
 				}
 				
@@ -193,14 +196,9 @@ main.home {
 	}
 
 	.about-me {
-		background: $cor-fundo-secundaria;
+		background: $cor-grafite;
 		height: auto;
 		.container {
-			.titulo1 {
-				padding: 60px 0 15px 20px;
-				border-left: 3px solid #fff;
-				border-radius: 0 25px;
-			}
 			.conteudo-wp {
 				margin: 30px 0;
 				p {
@@ -214,18 +212,67 @@ main.home {
 				.img-wp {
 					display: block;
 					width: 100%;
-					height: 320px;
+					height: 400px;
 					background-position: center center;
 					background-repeat: no-repeat;
 					background-size: cover;
-					border: 25px solid $cor-fundo-terca;
+					border: 25px solid $cor-amarelo;
 					filter: brightness(60%);
 				}
 			}
 		}
 	}
-	
 
+	.skills {
+		.container {
+			.conteudo-wp {
+				margin: 30px 0;
+				P {
+					font-size: 19px;
+					color: $cor-branca;
+					@include font1-italic;
+				}
+			}
+			.grafico {
+				.info {
+					margin-left: 30px;
+					margin-bottom: 13px;
+					.texto {
+						@include font1-bold;
+						font-size: 17px;
+						color: $cor-branca;
+					}
+					.bloco {
+						height: 7px;
+						width: 100%;
+						background: $cor-grafite;
+						display: block;
+						a {
+							height: 7px;
+							background: $cor-amarelo;
+							display: block;
+							transition: all 500ms ease;
+						}
+						.contador {
+							transition: width ease 2s;
+						 
+							&.inativo {
+							  width: 0px !important;
+							}
+						 }
+					}
+				}
+			}
+		}
+	}
+	
+	.portfolio {
+		background: $cor-grafite;
+		height: auto;
+		.container {
+			
+		}
+	}
 
 
 	.noticias {

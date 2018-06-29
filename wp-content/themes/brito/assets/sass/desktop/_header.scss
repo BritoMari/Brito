@@ -6,7 +6,7 @@
   text-align: right;
   z-index: 10000;
   padding: 9px 0;
-  background: $cor-fundo-secundaria;
+  background: $cor-grafite;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -33,7 +33,7 @@
                 transition: all 500ms ease;
                 display: inline-block;
                 a {
-                  color: $cor-fundo-terca;
+                  color: $cor-amarelo;
                   @include font1-bold;
                   font-size: 20px;
                   text-transform: uppercase;
@@ -61,7 +61,7 @@
               }
               
               .current_page_item  a {
-                color: $cor-fundo-secundaria;
+                color: $cor-grafite;
               }
             }
           }

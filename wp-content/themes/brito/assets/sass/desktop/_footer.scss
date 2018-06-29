@@ -1,5 +1,5 @@
 .footer {
-	background: $cor-fundo-terca;
+	background: $cor-amarelo;
 	padding: 0;
 	.container {
 		
@@ -15,7 +15,7 @@
 				.svg-inline--fa {
 					padding-right: 0px;
 					padding-left: 15px;
-					color: $cor-fundo-secundaria;
+					color: $cor-grafite;
 					font-size: 35px;
 					
 					svg {
@@ -40,7 +40,7 @@
 					transition: all 500ms ease;
 					display: inline-block;
 					a {
-						color: $cor-fundo-secundaria;
+						color: $cor-grafite;
 						font-size: 25px;
 						padding: 4px 30px;
 						display: block;
@@ -49,7 +49,7 @@
 					.icon {
 						padding-right: 0px;
 						padding-left: 15px;
-						color: $cor-fundo-secundaria;
+						color: $cor-grafite;
 						svg {
 							transition: all 500ms ease;
 							&:hover {

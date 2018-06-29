@@ -43,6 +43,8 @@
 
 	<script type='text/javascript' src="/brito/wp-content/themes/brito/assets/js/vendor/jquery.counterup.min.js"></script>
 
+	<script type='text/javascript' src="/brito/wp-content/themes/brito/assets/js/vendor/typed.min.js"></script>
+
 	<script type='text/javascript' src="/brito/wp-content/themes/brito/assets/js/scripts.js?v=<?php echo date('dmYHi'); ?>"></script>
 
 

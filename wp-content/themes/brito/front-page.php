@@ -11,9 +11,9 @@
 					the_row();
 		?>
 				<span class="icone-chave">{</span>
-				<div class="conteudo-wp">
-					<h1 class="titulo"><?php the_sub_field('titulo'); ?></h1>
-					<h2 class="subtitulo"><?php the_sub_field('subtitulo'); ?></h1>
+				<div class="conteudo-wp texto-banner">
+					<h1 class="titulo" data-texto="<?php the_sub_field('titulo'); ?>"></h1>
+					<h2 class="subtitulo" data-texto="<?php the_sub_field('subtitulo'); ?>"></h1>
 				</div>
 				<span class="icone-chave2">}</span>
 		<?php 
@@ -21,7 +21,6 @@
 		endif;
 		?>
 	</section>
-	
 
 	<section class="about-me">
 		<div class="container">
@@ -35,68 +34,44 @@
 			</div>
 		</div>
 	</section>
-	<section class="noticias">
-		<h1 class="titulo11"><?php the_field('titulo_noticias'); ?></h1>
-		<div class="part-noticias">
-		<?php 
-				$destaque = new WP_Query('post_type=post&posts_per_page=4&');
 
-				if($destaque->have_posts()):
-					while($destaque->have_posts()):
-						$destaque->the_post();
+	<section class="skills">
+		<div class="container">
+			<h1 class="titulo1"><?php the_field('titulo_skills'); ?></h1>
+
+			<div class="conteudo-wp col-md-5">
+				<?php the_field('conteudo_skills'); ?>
+			</div>
+
+			<div class="grafico col-md-7">
+				<?php 
+					if(have_rows('grafico')):
+						while(have_rows('grafico')):
+							the_row();
 				?>
-						
-					<div class="color">
-						<a href="<?php the_permalink(); ?>">
-							<div class="img-wp" style="background-image:  url(<?php the_field('banner_noticias'); ?>);">
-								<div class="conteudo-wp">
-									<h1 class="titulo-noticia"><?php the_title(); ?></h1>
-									<?php the_excerpt(); ?>
-								</div>
-							</div>
-							<span><i class="fas fa-plus"></i></span>
-						</a>
-					</div>
-						
-				<?php
+
+				<div class="info">
+					<p class="texto"><?php the_sub_field('texto'); ?></p>
+					<span class="bloco"><a class="contador inativo" style="width: <?php the_sub_field('bloco'); ?>"></a></span>
+				</div>
+				
+				<?php 
 					endwhile;
-					wp_reset_postdata();
 				endif;
-
-				 ?>
-				 </div>
-	</section>
-	<section class="noticias">
-		<h1 class="titulo11"><?php the_field('titulo_noticias'); ?></h1>
-		<div class="part-noticias">
-		<?php 
-				$destaque = new WP_Query('post_type=post&posts_per_page=4&');
-
-				if($destaque->have_posts()):
-					while($destaque->have_posts()):
-						$destaque->the_post();
 				?>
-						
-					<div class="color">
-						<a href="<?php the_permalink(); ?>">
-							<div class="img-wp" style="background-image:  url(<?php the_field('banner_noticias'); ?>);">
-								<div class="conteudo-wp">
-									<h1 class="titulo-noticia"><?php the_title(); ?></h1>
-									<?php the_excerpt(); ?>
-								</div>
-							</div>
-							<span><i class="fas fa-plus"></i></span>
-						</a>
-					</div>
-						
-				<?php
-					endwhile;
-					wp_reset_postdata();
-				endif;
-
-				 ?>
-				 </div>
+			</div>
+		</div>
+		
 	</section>
+
+	<section class="portfolio">
+		<div class="container">
+			<h1 class="titulo1"><?php the_field('titulo_portfolio'); ?></h1>
+		</div>
+	</section>
+
+
+
 	<section class="noticias">
 		<h1 class="titulo11"><?php the_field('titulo_noticias'); ?></h1>
 		<div class="part-noticias">
