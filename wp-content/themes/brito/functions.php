@@ -10,7 +10,6 @@ function carrega_scripts(){
 	wp_enqueue_style( 'bootstrap', 		get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '1.0', 'all');
 	wp_enqueue_style( 'font-awesome', 	get_template_directory_uri() . '/assets/css/font-awesome.min.css', array(), '1.0', 'all');
 	wp_enqueue_style( 'swipercss', 		get_template_directory_uri() . '/assets/css/swiper.min.css', array(), '1.0', 'all');
-	wp_enqueue_style( 'panorama', 		get_template_directory_uri() . '/assets/css/panorama-viewer.css', array(), '1.0', 'all');
 	wp_enqueue_style( 'style', 			get_template_directory_uri() . '/assets/css/style.css', array(), '1.0', 'all');
 	
 	// JS
@@ -26,9 +25,7 @@ add_action( 'wp_enqueue_scripts', 'carrega_scripts');
 
 register_nav_menus(
 	array(
-		'meu_menu_principal' => 'Menu Principal',
-		'menu_rodape' => 'Menu Rodapé',
-		'menu_lateral' => 'Menu Lateral'
+		'meu_menu_principal' => 'Menu Principal'
 	)
 );
 

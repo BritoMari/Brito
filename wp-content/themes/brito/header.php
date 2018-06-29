@@ -37,7 +37,7 @@
                                 <a href="#blog">Blog</a>
                             </li>
                             <li class="menu-item">
-                                <a href="https://github.com/BritoMari" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/BritoMari" target="_blank" class="icon"><i class="fab fa-github-alt"></i></a>
                             </li>
                             <li class="menu-item">
                                 <a href="https://codepen.io/BritoMari/" target="_blank" class="icon"><i class="fab fa-codepen"></i></a>
