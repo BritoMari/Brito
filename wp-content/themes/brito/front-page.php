@@ -67,10 +67,57 @@
 	<section class="portfolio">
 		<div class="container">
 			<h1 class="titulo1"><?php the_field('titulo_portfolio'); ?></h1>
+
+			<div class="conteudo-wp">
+				<?php the_field('texto_port'); ?>
+			</div>
+		</div>
+		
+		<div class="recent-works">
+			<?php 
+				if(have_rows('bloco_trabalhos')):
+					while(have_rows('bloco_trabalhos')):
+						the_row();
+			?>
+				<div class="bloco">
+					<a target="_blank" href="<?php the_sub_field('link'); ?>">
+						<div class="img-wp" style="background-image: url(<?php the_sub_field('imagem'); ?>);"></div>
+					</a>
+					<span>Veja mais</span>
+				</div>
+			<?php 
+				endwhile;
+			endif;
+			?>
 		</div>
 	</section>
 
+	<div class="curiosidades">
+		<div class="container">
+			<h1 class="titulo1"><?php the_field('titulo_curio'); ?></h1>
 
+			<div class="conteudo-wp col-md-6">
+				<?php the_field('subtitulo_curio'); ?>
+			</div>
+			
+			<div class="conteudo-wp2 col-md-6">
+				<?php 
+					if(have_rows('curiosidades')):
+						while(have_rows('curiosidades')):
+							the_row();
+				?>
+					
+					<div class="bloco">
+						<?php the_sub_field('texto'); ?>
+					</div>
+					
+				<?php 
+					endwhile;
+				endif;
+				?>
+			</div>
+		</div>
+	</div>
 
 	<section class="noticias">
 		<h1 class="titulo11"><?php the_field('titulo_noticias'); ?></h1>

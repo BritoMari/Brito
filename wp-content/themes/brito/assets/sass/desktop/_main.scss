@@ -269,7 +269,82 @@ main.home {
 	.portfolio {
 		background: $cor-grafite;
 		height: auto;
-		.container {
+		.conteudo-wp {
+			margin: 30px 0;
+			p {
+				text-align: center;
+				font-size: 19px;
+				color: $cor-branca;
+				@include font1-italic;
+				margin-bottom: 10px;
+			}
+		}
+		.recent-works {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 60px 0;
+			
+			.bloco {
+				width: 25%;
+				position: relative;
+				margin-bottom: 15px;
+				.img-wp {
+					display: block;
+					width: 100%;
+					height: 250px;
+					background-position: center center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					border-radius: 50%;
+					transition: all 500ms ease;
+					&:hover {
+						border-radius: 4%;
+					}
+				}
+				span {
+					display: none;
+					transition: all 500ms ease;
+				}
+				&:hover span {
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
+		}
+		
+	}
+
+	.curiosidades {
+		.conteudo-wp {
+			margin: 30px 0;
+			P {
+				text-align: center;
+				font-size: 19px;
+				color: $cor-branca;
+				@include font1-italic;
+			}
+		}
+
+		.conteudo-wp2 {
+			margin: 30px 0;
+			padding-left: 70px;
+			.bloco {
+				@include font1-bold;
+				color: $cor-amarelo;
+				display: flex;
+				margin-bottom: 8px;
+				&:before {
+					content: '';
+					background-image: url(../images/icon1.png);
+					display: block;
+					width: 9%;
+					height: 20px;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+			}
 			
 		}
 	}

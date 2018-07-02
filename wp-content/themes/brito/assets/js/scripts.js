@@ -21,7 +21,7 @@
   var typed = new Typed('.texto-banner .subtitulo', {
     strings: [textoTitulo],
     typeSpeed: 50,
-    startDelay: 1000,
+    startDelay: 1500,
   });
 
   /*Contador seção skills */
