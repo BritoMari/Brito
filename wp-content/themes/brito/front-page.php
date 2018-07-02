@@ -22,7 +22,7 @@
 		?>
 	</section>
 
-	<section class="about-me">
+	<section class="about-me" id="sobre-mim">
 		<div class="container">
 			<h1 class="titulo1"><?php the_field('titulo_sobre_mim'); ?></h1>
 			<div class="conteudo-wp col-md-7">
@@ -35,7 +35,7 @@
 		</div>
 	</section>
 
-	<section class="skills">
+	<section class="skills" id="habilidades">
 		<div class="container">
 			<h1 class="titulo1"><?php the_field('titulo_skills'); ?></h1>
 
@@ -64,7 +64,7 @@
 		
 	</section>
 
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="container">
 			<h1 class="titulo1"><?php the_field('titulo_portfolio'); ?></h1>
 
@@ -92,14 +92,14 @@
 		</div>
 	</section>
 
-	<div class="curiosidades">
+	<section class="curiosidades">
 		<div class="container">
 			<h1 class="titulo1"><?php the_field('titulo_curio'); ?></h1>
 
 			<div class="conteudo-wp col-md-6">
 				<?php the_field('subtitulo_curio'); ?>
 			</div>
-			
+
 			<div class="conteudo-wp2 col-md-6">
 				<?php 
 					if(have_rows('curiosidades')):
@@ -117,43 +117,14 @@
 				?>
 			</div>
 		</div>
-	</div>
-
-	<section class="noticias">
-		<h1 class="titulo11"><?php the_field('titulo_noticias'); ?></h1>
-		<div class="part-noticias">
-		<?php 
-				$destaque = new WP_Query('post_type=post&posts_per_page=4&');
-
-				if($destaque->have_posts()):
-					while($destaque->have_posts()):
-						$destaque->the_post();
-				?>
-						
-					<div class="color">
-						<a href="<?php the_permalink(); ?>">
-							<div class="img-wp" style="background-image:  url(<?php the_field('banner_noticias'); ?>);">
-								<div class="conteudo-wp">
-									<h1 class="titulo-noticia"><?php the_title(); ?></h1>
-									<?php the_excerpt(); ?>
-								</div>
-							</div>
-							<span><i class="fas fa-plus"></i></span>
-						</a>
-					</div>
-						
-				<?php
-					endwhile;
-					wp_reset_postdata();
-				endif;
-
-				 ?>
-				 </div>
 	</section>
-	<section class="noticias">
-		<h1 class="titulo11"><?php the_field('titulo_noticias'); ?></h1>
+
+	<section class="blog" id="blog">
+		<div class="container">
+			<h1 class="titulo1"><?php the_field('titulo_blog'); ?></h1>
+		</div>
 		<div class="part-noticias">
-		<?php 
+			<?php 
 				$destaque = new WP_Query('post_type=post&posts_per_page=4&');
 
 				if($destaque->have_posts()):
@@ -163,23 +134,25 @@
 						
 					<div class="color">
 						<a href="<?php the_permalink(); ?>">
-							<div class="img-wp" style="background-image:  url(<?php the_field('banner_noticias'); ?>);">
+							<div class="img-wp" style="background-image:  url(<?php the_field('banner_blog'); ?>);">
 								<div class="conteudo-wp">
 									<h1 class="titulo-noticia"><?php the_title(); ?></h1>
 									<?php the_excerpt(); ?>
 								</div>
 							</div>
-							<span><i class="fas fa-plus"></i></span>
 						</a>
 					</div>
 						
-				<?php
-					endwhile;
-					wp_reset_postdata();
-				endif;
+			<?php
+				endwhile;
+				wp_reset_postdata();
+			endif;
 
-				 ?>
-				 </div>
+				?>
+		</div>
+		<a target="_blank" href="<?php bloginfo('url') ?>/blog/">
+			<span>Veja mais</span>
+		</a>
 	</section>
 </main>	
 <?php get_footer(); ?>

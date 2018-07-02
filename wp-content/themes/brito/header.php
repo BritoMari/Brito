@@ -25,10 +25,13 @@
                     <div class="menu-menu-principal-container">
                         <ul class="menu">
                             <li class="menu-item">
-                                <a href="#home">Home</a>
+                                <a href="<?php bloginfo('url') ?>/home/">Home</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#sobre-mim">Sobre Mim</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#habilidades">Habilidades</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#portfolio">Portfólio</a>

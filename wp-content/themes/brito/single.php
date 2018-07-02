@@ -18,7 +18,7 @@
 
                 <p class="publicacao">Publicado por <?php the_author(); ?></p>
                     <div class="banner"> 
-                        <div class="img-wp" style="background-image:  url(<?php the_field('banner_noticias'); ?>);"></div>
+                        <div class="img-wp" style="background-image:  url(<?php the_field('banner_blog'); ?>);"></div>
                 
                     </div>
                     <div class="conteudo-wp">

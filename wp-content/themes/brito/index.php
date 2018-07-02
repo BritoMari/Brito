@@ -11,15 +11,6 @@
 
 	<section class="artigos">
 		<div class="container">
-		<div class="bloco-dois col-md-2 pull-right">
-				<?php 
-					if ( is_active_sidebar('sidebar-1')){
-							dynamic_sidebar('sidebar-1'); 
-					}
-					
-					?>
-					
-			</div>
 
 			<div class="bloco col-md-10">
 				<?php         
@@ -44,7 +35,5 @@
 			
 		</div>		
 	</section>
-    
-    <section class="empreendimentos-slide"><?php require 'template-parts/empreendimentos-slide.php'; ?></section>
 </main>
 <?php get_footer(); ?>
