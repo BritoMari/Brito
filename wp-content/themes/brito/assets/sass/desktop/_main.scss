@@ -214,6 +214,8 @@ main.home {
 			}
 			.imagem {
 				margin-left: 50px;
+				position: relative;
+				top: 40px;
 				.img-wp {
 					display: block;
 					width: 100%;
@@ -222,7 +224,6 @@ main.home {
 					background-repeat: no-repeat;
 					background-size: cover;
 					border: 25px solid $cor-amarelo;
-					filter: brightness(60%);
 				}
 			}
 		}
