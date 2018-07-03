@@ -51,7 +51,12 @@
 				?>
 
 				<div class="info">
-					<p class="texto"><?php the_sub_field('texto'); ?></p>
+
+					<div class="bloco-skills">
+						<img class="icone" src="<?php the_sub_field('icone'); ?>);" alt="<?php the_sub_field('tag_alt'); ?>"></>
+						<p class="texto"><?php the_sub_field('texto'); ?></p>
+					</div>
+
 					<span class="bloco"><a class="contador inativo" style="width: <?php the_sub_field('bloco'); ?>"></a></span>
 				</div>
 				
@@ -81,9 +86,11 @@
 			?>
 				<div class="bloco">
 					<a target="_blank" href="<?php the_sub_field('link'); ?>">
-						<div class="img-wp" style="background-image: url(<?php the_sub_field('imagem'); ?>);"></div>
+						<div class="img-wp" style="background-image: url(<?php the_sub_field('imagem'); ?>);" alt="<?php the_sub_field('tag_alt'); ?>">
+							<span><?php the_sub_field('conteudo'); ?></span>
+						</div>
 					</a>
-					<span>Veja mais</span>
+					
 				</div>
 			<?php 
 				endwhile;
@@ -135,10 +142,11 @@
 					<div class="color">
 						<a href="<?php the_permalink(); ?>">
 							<div class="img-wp" style="background-image:  url(<?php the_field('banner_blog'); ?>);">
-								<div class="conteudo-wp">
-									<h1 class="titulo-noticia"><?php the_title(); ?></h1>
-									<?php the_excerpt(); ?>
-								</div>
+								
+							</div>
+							<div class="conteudo-wp">
+								<h1 class="titulo-noticia"><?php the_title(); ?></h1>
+								<?php the_excerpt(); ?>
 							</div>
 						</a>
 					</div>
@@ -150,8 +158,8 @@
 
 				?>
 		</div>
-		<a target="_blank" href="<?php bloginfo('url') ?>/blog/">
-			<span>Veja mais</span>
+		<a class="botao" target="_blank" href="<?php bloginfo('url') ?>/blog/">
+			<span>Chega Mais</span>
 		</a>
 	</section>
 </main>	

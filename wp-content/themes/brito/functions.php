@@ -1,16 +1,14 @@
 <?php
-
-// Incluindo nosso arquivo customizer
-require get_template_directory() . '/assets/inc/customizer.php';
+require 'assets/inc/customizer.php';
 
 
 
 function carrega_scripts(){
 	// CSS
-	wp_enqueue_style( 'bootstrap', 		get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '1.0', 'all');
-	wp_enqueue_style( 'font-awesome', 	get_template_directory_uri() . '/assets/css/font-awesome.min.css', array(), '1.0', 'all');
-	wp_enqueue_style( 'swipercss', 		get_template_directory_uri() . '/assets/css/swiper.min.css', array(), '1.0', 'all');
-	wp_enqueue_style( 'style', 			get_template_directory_uri() . '/assets/css/style.css', array(), '1.0', 'all');
+	wp_enqueue_style( 'bootstrap', 		get_template_directory_uri(). '/assets/css/bootstrap.min.css', array(), '1.0', 'all');
+	wp_enqueue_style( 'font-awesome', 	get_template_directory_uri(). '/assets/css/font-awesome.min.css', array(), '1.0', 'all');
+	wp_enqueue_style( 'swipercss', 		get_template_directory_uri(). '/assets/css/swiper.min.css', array(), '1.0', 'all');
+	wp_enqueue_style( 'style', 			get_template_directory_uri(). '/assets/css/style.css', array(), '1.0', 'all');
 	
 	// JS
 	wp_enqueue_script( 'bootstrap',     get_template_directory_uri(). '/assets/js/bootstrap.min.js', array('jquery'), null, true);

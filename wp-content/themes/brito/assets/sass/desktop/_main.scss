@@ -38,6 +38,10 @@ p {
 .clear {
 	clear: both;
 }
+
+.typed-cursor.typed-cursor--blink {
+	display: none !important;
+}
 .empreendimentos-slide {
 	height: 425px;
 	width: 100%;
@@ -167,6 +171,7 @@ main.home {
 			top: 200px;
 			right: 18%;
 			width: 34%;
+			
 			.titulo {
 				width: 37%;
 				p {
@@ -237,18 +242,29 @@ main.home {
 				.info {
 					margin-left: 30px;
 					margin-bottom: 13px;
-					.texto {
-						@include font1-bold;
-						font-size: 17px;
-						color: $cor-branca;
+					.bloco-skills {
+						display: inline-flex;
+						margin-bottom: 10px;
+						.icone {
+							display: block;
+						}
+						.texto {
+							@include font1-bold;
+							font-size: 17px;
+							color: $cor-branca;
+							display: flex;
+							align-items: center;
+							margin-left: 5px;
+						}
 					}
+					
 					.bloco {
-						height: 7px;
+						height: 5px;
 						width: 100%;
 						background: $cor-grafite;
 						display: block;
 						a {
-							height: 7px;
+							height: 5px;
 							background: $cor-amarelo;
 							display: block;
 							transition: all 500ms ease;
@@ -283,33 +299,68 @@ main.home {
 			display: flex;
 			flex-wrap: wrap;
 			padding: 60px 0;
+			justify-content: space-around;
+
 			
 			.bloco {
-				width: 25%;
+				width: 30%;
 				position: relative;
-				margin-bottom: 15px;
+				margin-bottom: 30px;
+				box-shadow: 2px 10px 25px rgba(90, 91, 95, 0.3), 0 8px 25px rgba(90, 91, 95, 0.2);
 				.img-wp {
 					display: block;
 					width: 100%;
-					height: 250px;
-					background-position: center center;
+					height: 220px;
+					background-position: top center;
 					background-repeat: no-repeat;
 					background-size: cover;
-					border-radius: 50%;
 					transition: all 500ms ease;
 					&:hover {
 						border-radius: 4%;
+						-webkit-transform: scale(1.1);
+						-ms-transform: scale(1.1);
+						transform: scale(1.1);
+					}
+					span {
+						background: transparent;
+						transition: all 500ms ease;
+						border-radius: 50%;
+						width: 100%;
+						height: 100%;
+						text-align: center;
+						p {
+							color: transparent;
+							transition: all 100ms ease;
+							display: flex;
+							justify-content: space-around;
+							align-items: center;
+							width: 100%;
+							
+						}
+					}
+					&:hover span {
+						position: absolute;
+						background: $cor-amarelo;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						border-radius: 4%;
+						transition: all 500ms ease;
+						p {
+							color: $cor-azul;
+							padding: 0 10px;
+							@include font1-italic;
+							font-size: 18px;
+							strong {
+								font-size: 20px;
+								margin: 20px 0;
+								@include font1-bold;
+							}
+						}
 					}
 				}
-				span {
-					display: none;
-					transition: all 500ms ease;
-				}
-				&:hover span {
-					position: absolute;
-					top: 0;
-					left: 0;
-				}
+				
 			}
 		}
 		
@@ -357,11 +408,10 @@ main.home {
 			display: flex;
 			.color {
 				width: 25%;
-				margin-right: 1px;
-				&:last-child {
-					margin-right: inherit;
-				}
 				a {
+					display: flex;
+					position: relative;
+					transition: all 700ms ease;
 					.img-wp {
 						transition: all 700ms ease;
 						width: 100%;
@@ -370,37 +420,34 @@ main.home {
 						background-position: center center;
 						background-repeat: no-repeat;
 						background-size: cover;
-						position: relative;
-						.conteudo-wp {
-							display: none;
-							height: 0;
+						filter: brightness(45%);
+					}
+					.conteudo-wp {
+						width: 100%;
+						transition: all 700ms ease;
+						position: absolute;
+						width: 100%;
+						bottom: 10px;
+						padding: 0 10px 0 30px;
+						display: block;
+						.titulo-noticia {
+							color: $cor-amarelo;
+							@include font1-bold;
+							font-size: 25px;
 						}
-						&:hover .conteudo-wp {
-							position: absolute;
-							height: 100%;
-							width: 100%;
-							bottom: 0px;
-							padding: 0 10px 0 30px;
-							background: $cor-azul;
-							opacity: 0.70;
-							display: block;
-							.titulo-noticia {
-								color: $cor-amarelo;
-								@include font1-bold;
-								font-size: 25px;
-							}
-							p {
-								@include font1-italic();
-								color: $cor-branca;
-								font-size: 15px;
-							}
+						p {
+							@include font1-italic();
+							color: $cor-branca;
+							font-size: 17px;
 						}
-						
+					}
+					&:hover {
+						box-shadow: 2px 10px 25px rgba(90, 91, 95, 0.3), 0 8px 25px rgba(90, 91, 95, 0.2);
 					}
 				}
 			}
 		}
-		a {
+		.botao {
 			display: flex;
 			width: 100%;
 			padding-bottom: 10px;
@@ -419,6 +466,7 @@ main.home {
 				height: 50px;
 				align-items: center;
 				border-radius: 50px;
+				font-weight: bold;
 				&:hover {
 				background-color: $cor-azul;
 				}
