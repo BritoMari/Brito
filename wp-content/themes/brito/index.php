@@ -12,7 +12,7 @@
 	<section class="artigos">
 		<div class="container">
 
-			<div class="bloco col-md-10">
+			<div class="bloco">
 				<?php         
 					if(have_posts()) :         
 					while(have_posts()):
@@ -23,11 +23,6 @@
 
 				<?php
 					endwhile;
-				 the_posts_pagination(array(
-						'next_text'		=>	'<i class="mais mostrar-itens" ">Mais Notícias</i>'
-					  )); ?>
-
-					 <?php  
 						 wp_reset_postdata(); 
 					endif;
 				?>

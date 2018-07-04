@@ -2,17 +2,11 @@
 	the_post();
 ?>
 <main class="single-post fadeIn">
-    
-    <h1 class="titulo11">Notícias</h1>
-    <div class="botoes container">
-        <a href="<?php bloginfo('url') ?>/noticia"><span>Notícias</span></a>
-        <a class="ativo"><span><?php the_title(); ?></span></a>
-    </div>
 
 	<section class="artigos">
 		<div class="container">
 			<div class="bloco col-md-10">
-                <h2 class="titulo-info"><?php the_title(); ?></h2>
+                <h2 class="titulo1"><?php the_title(); ?></h2>
 
                 <div class="data"><?php the_date(); ?> <?php the_field('local') ?></div>
 

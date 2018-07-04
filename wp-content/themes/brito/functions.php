@@ -71,7 +71,7 @@ if (function_exists('register_sidebar')){
 
 
 function custom_excerpt_length( $length ) {
- return 12;
+ return 15;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length');
 function erikasarti_personaliza_widget_tags($args){

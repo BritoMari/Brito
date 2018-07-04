@@ -142,11 +142,13 @@
 					<div class="color">
 						<a href="<?php the_permalink(); ?>">
 							<div class="img-wp" style="background-image:  url(<?php the_field('banner_blog'); ?>);">
-								
 							</div>
 							<div class="conteudo-wp">
 								<h1 class="titulo-noticia"><?php the_title(); ?></h1>
 								<?php the_excerpt(); ?>
+							</div>
+							<div class="veja-mais">
+								
 							</div>
 						</a>
 					</div>
@@ -158,9 +160,13 @@
 
 				?>
 		</div>
-		<a class="botao" target="_blank" href="<?php bloginfo('url') ?>/blog/">
-			<span>Chega Mais</span>
-		</a>
+		
+		<div class="botao">
+			<a target="_blank" href="<?php bloginfo('url') ?>/blog/">
+				Chega Mais
+			</a>
+		</div>
+		
 	</section>
 </main>	
 <?php get_footer(); ?>
