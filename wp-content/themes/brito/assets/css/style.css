@@ -910,7 +910,6 @@ html body {
       display: block; } }
 @media (max-width: 991px) {
   html > body {
-    /*botao-menu*/
     /*Rodapé*/ }
     html > body .topo .custom-logo-link {
       display: none !important; }
@@ -925,6 +924,45 @@ html body {
         html > body.home .topo.transparent .logo-mobile {
           transition: all 500ms ease;
           display: none; }
+    html > body .container-menu {
+      display: block;
+      position: relative;
+      width: 40px;
+      height: 40px;
+      cursor: pointer; }
+    html > body #menu {
+      display: none; }
+    html > body .menu-button {
+      width: 100%;
+      height: 5px;
+      background-color: #F3A712;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all .5s ease-in-out; }
+    html > body .menu-button:before, html > body .menu-button:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background-color: #F3A712;
+      transition: all .5s ease-in-out; }
+    html > body .menu-button:before {
+      top: -12px; }
+    html > body .menu-button:after {
+      top: 12px; }
+    html > body .menu-button, html > body .menu-button:before, html > body .menu-button:after {
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3); }
+    html > body #menu:checked + label .menu-button {
+      background-color: transparent;
+      box-shadow: none; }
+    html > body #menu:checked + label .menu-button:before {
+      transform: rotate(45deg);
+      top: 0px; }
+    html > body #menu:checked + label .menu-button:after {
+      transform: rotate(135deg);
+      top: 0; }
     html > body .topo .logo-mobile {
       display: block;
       width: 88px;
@@ -951,30 +989,6 @@ html body {
       top: 0px;
       left: 50%;
       margin-left: -40px; }
-    html > body .abre_menu {
-      width: 25px;
-      height: 12px;
-      display: block;
-      position: absolute;
-      right: 20px;
-      top: 20px;
-      z-index: 2; }
-    html > body .abre_menu span,
-    html > body .abre_menu span:before,
-    html > body .abre_menu span:after {
-      width: 100%;
-      height: 4px;
-      display: block;
-      background: #F3A712;
-      position: relative; }
-    html > body .abre_menu span:before {
-      content: "";
-      top: 8px;
-      position: absolute; }
-    html > body .abre_menu span:after {
-      content: "";
-      top: 16px;
-      position: absolute; }
     html > body .topo .menu_geral .menu_links {
       position: fixed;
       top: 45px;
@@ -1031,10 +1045,6 @@ html body {
       opacity: 1;
       padding: 10px 0;
       margin-top: 0; }
-    html > body .menu_geral ul.menu_info li a {
-      padding: 1.5%; }
-    html > body .menu_geral .menu-tel {
-      display: none; }
     html > body .footer {
       text-align: center; }
       html > body .footer .container .footer-container .footer-logo {

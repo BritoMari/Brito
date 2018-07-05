@@ -16,9 +16,11 @@
 	<header class="topo transparent">
         <div class="container text-right">
 
-            <input type="checkbox" id="menu">
-		    <label class="abre_menu" for="menu"><span></span></label>
-
+           
+            <input id="menu" type="checkbox" />
+            <label for="menu" class="container-menu">
+                <div class="menu-button"></div>
+            </label>
         	<nav class="menu_geral">
 				<ul class="menu_info">
 				<div class="menu_links">
