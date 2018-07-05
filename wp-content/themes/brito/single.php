@@ -33,8 +33,6 @@
 			</div>
 		</div>		
     </section>
-    
-    <section class="empreendimentos-slide"><?php require 'template-parts/empreendimentos-slide.php'; ?></section>
 
 </main>
 <?php get_footer(); ?>

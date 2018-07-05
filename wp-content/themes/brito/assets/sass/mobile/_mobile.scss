@@ -19,16 +19,10 @@ html {
 				display: none !important;
 			}
 			p {
-				font-size: 14px !important;
 			}
 			.titulo11 {
-				font-size: 20px;
 			}
 			.titulo1 {
-				font-size: 25px;
-			}
-			.titulo2 {
-				font-size: 25px;
 			}
 			
 			&.home {
@@ -61,7 +55,7 @@ html {
                 position: fixed;
                 top: 0;
                 left: 0;
-                background: $cor-12;
+                background: $cor-grafite;
                 z-index: 999;
 				height: 60px;
 				
@@ -110,7 +104,7 @@ html {
                 width: 100%;
                 height: 4px;
                 display: block;
-                background: $cor-branca;
+                background: $cor-amarelo;
                 position: relative;
             }
 

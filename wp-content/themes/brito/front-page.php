@@ -85,12 +85,14 @@
 						the_row();
 			?>
 				<div class="bloco">
-					<a target="_blank" href="<?php the_sub_field('link'); ?>">
-						<div class="img-wp" style="background-image: url(<?php the_sub_field('imagem'); ?>);" alt="<?php the_sub_field('tag_alt'); ?>">
-							<span><?php the_sub_field('conteudo'); ?></span>
-						</div>
-					</a>
-					
+					<div class="img-wp" style="background-image: url(<?php the_sub_field('imagem'); ?>);" alt="<?php the_sub_field('tag_alt'); ?>">
+						<span>
+							<?php the_sub_field('conteudo'); ?>
+							<a target="_blank" href="<?php the_sub_field('link'); ?>">
+								<button>Visite o site</button>
+							</a>
+						</span>
+					</div>
 				</div>
 			<?php 
 				endwhile;
@@ -140,17 +142,17 @@
 				?>
 						
 					<div class="color">
-						<a href="<?php the_permalink(); ?>">
+						<div class="bloco">
 							<div class="img-wp" style="background-image:  url(<?php the_field('banner_blog'); ?>);">
 							</div>
 							<div class="conteudo-wp">
 								<h1 class="titulo-noticia"><?php the_title(); ?></h1>
 								<?php the_excerpt(); ?>
+								<a href="<?php the_permalink(); ?>">
+									<button>Visite o site</button>
+								</a>
 							</div>
-							<div class="veja-mais">
-								
-							</div>
-						</a>
+						</div>
 					</div>
 						
 			<?php

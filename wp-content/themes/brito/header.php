@@ -24,19 +24,19 @@
 				<div class="menu_links">
                     <div class="menu-menu-principal-container">
                         <ul class="menu">
-                            <li class="menu-item">
+                            <li class="menu-item ativo">
                                 <a href="<?php bloginfo('url') ?>/home/">Home</a>
                             </li>
-                            <li class="menu-item">
+                            <li class="menu-item ativo">
                                 <a href="#sobre-mim">Sobre Mim</a>
                             </li>
-                            <li class="menu-item">
+                            <li class="menu-item ativo">
                                 <a href="#habilidades">Habilidades</a>
                             </li>
-                            <li class="menu-item">
+                            <li class="menu-item ativo">
                                 <a href="#portfolio">Portfólio</a>
                             </li>
-                            <li class="menu-item">
+                            <li class="menu-item ativo">
                                 <a href="#blog">Blog</a>
                             </li>
                             <li class="menu-item">
