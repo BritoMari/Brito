@@ -1,5 +1,6 @@
 (function(){
   "use strict";
+
 /*Fazendo topo ficar visível ao rolar a página*/
   var $ = jQuery;
   jQuery(window).bind('scroll', function () {
@@ -31,6 +32,7 @@
      PosicaoGraficoSkills = PosicaoGraficoSkills - (jQuery(window).height() / 2);
      if (jQuery(window).scrollTop() > PosicaoGraficoSkills) {
        jQuery('.grafico .contador.inativo').removeClass('inativo');
+       jQuery('.counter').counterUp({ delay: 10, time: 1000 });
      }
    }
  });

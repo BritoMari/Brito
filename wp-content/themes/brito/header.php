@@ -39,7 +39,7 @@
                                 <a href="#portfolio">Portfólio</a>
                             </li>
                             <li class="menu-item ativo">
-                                <a href="#blog">Blog</a>
+                                <a href="https://medium.com/@marianabriito" target="_blank">Blog</a>
                             </li>
                             <li class="menu-item">
                                 <a href="https://github.com/BritoMari" target="_blank" class="icon"><i class="fab fa-github-alt"></i></a>

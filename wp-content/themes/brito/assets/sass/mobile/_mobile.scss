@@ -1,56 +1,34 @@
 html {
     & > body {
 		@media(max-width: 1199px) {
-			
-			.topo .logo-mobile {
-				display: block;
-				width: 88px;
-				height: auto;
-				margin-top: -15px;
-				img {
-					width: 100%;
-    				display: block;
-				}
-            }
+
 		}
 
         @media(max-width: 991px) {
-			.topo .custom-logo-link {
-				display: none !important;
+			.titulo1 {
+				font-size: 20px;
+				padding: 30px 0 15px 20px;
 			}
 			p {
+				font-size: 14px !important;
 			}
-			.titulo11 {
-			}
-			.titulo1 {
-			}
-			
 			&.home {
-                padding-top: 0px;
-
                 .topo.transparent {
 					transition: all 500ms ease;
                     background: transparent;
-                
-					.custom-logo-link {
-						transition: all 500ms ease;
-						display: none;
-					}
-					.logo-mobile {
-						transition: all 500ms ease;
-						display: none;
-					}
             	}
 			}
 			.container-menu {
 				display: block;
 				position: relative;
-				width: 40px;
-				height: 40px;
+				width: 30px;
+				height: 22px;
 				cursor: pointer;
-			  }
+			}
 			  
-			#menu { display: none; }
+			#menu { 
+				display: none;
+			}
 			
 			.menu-button {
 				width: 100%;
@@ -60,6 +38,7 @@ html {
 				top: 50%;
 				transform: translateY(-50%);
 				transition: all .5s ease-in-out;
+				border-radius: 0px 5px 5px 0px;
 			}
 			
 			.menu-button:before, .menu-button:after {
@@ -70,13 +49,14 @@ html {
 				height: 5px;
 				background-color: $cor-amarelo;
 				transition: all .5s ease-in-out;
+				border-radius: 0px 5px 5px 0px;
 			} 
 			
 			.menu-button:before { 
-				top: -12px; 
+				top: -9px; 
 			}
 			.menu-button:after { 
-				top: 12px; 
+				top: 9px; 
 			}
 			
 			.menu-button, .menu-button:before, .menu-button:after { 
@@ -95,14 +75,6 @@ html {
 				transform: rotate(135deg); top: 0
 			}
 
-			.topo .logo-mobile {
-
-				display: block;
-				width: 88px;
-				height: auto;
-				margin-top: -15px;
-            }
-
 			.topo {
 				transition: all 500ms ease;
                 position: fixed;
@@ -110,166 +82,166 @@ html {
                 left: 0;
                 background: $cor-grafite;
                 z-index: 999;
-				height: 60px;
-				
-				.menu-lateral {
-					#menu-menu-lateral {
-						li {
-							width: 50px;
-							height: 50px;
+				height: 45px;
+				.menu_geral {
+					.menu_info {
+						.menu_links {
+							position: fixed;
+							top: 45px;
+							left: -100%;
+							width: 100%;
+							height: calc(100% - 45px);
+							z-index: 1;
+							display: flex;
+							justify-content: flex-end;
+							-webkit-transition: 0.5s ease-out;
+							-moz-transition: 0.5s ease-out;
+							-o-transition: 0.5s ease-out;
+							transition: 0.5s ease-out;
+							transition: all 500ms ease;
+							.menu-menu-principal-container {
+								width: 100%;
+								z-index: 9999999999;
+								background: $cor-12;
+								opacity: 0.90;
+								.menu {
+									display: flex;
+									width: 100%;
+									flex-wrap: wrap;
+									.menu-item {
+										width: 100%;
+										padding: 20px 130px;
+										a {
+
+										}
+									}
+								}
+							}
 						}
 					}
+					
 				}
 			}
-			
-			
-			.menu_geral ul.menu > li:before {
-				display: none;
-				
-			}
-			.menu_geral ul.menu {
-				border: inherit !important;
-			}
-			
-            .topo .custom-logo-link {
-				display: block;
-                width: 80px;
-                top: 0px;
-                left: 50%;
-                margin-left: -40px;
-            }
-
-            .topo .menu_geral .menu_links {
-                position: fixed;
-                top: 45px;
-				top: -200%;
-				right: 0;
-                width: 100%;
-                height: calc(100% - 45px);
-                z-index: 1;
-                display: flex;
-                justify-content: flex-end;
-                -webkit-transition: 0.5s ease-out;
-                -moz-transition: 0.5s ease-out;
-                -o-transition: 0.5s ease-out;
-				transition: 0.5s ease-out;
-				transition: all 500ms ease;
-            }
-
-            .topo .menu_geral .menu_links ul li {
-                display: block;
-				background: $cor-12;
-				opacity: 0.90;
-            }
-
-            .topo .menu_geral .menu_links ul li a {
-				text-align: left;
-				
-            }
-            
-			.topo .menu_geral ul li ul li a {
-				border-bottom: inherit;
-				text-transform: initial;
-				color: $cor-5 !important;
-				
-			}
-			.topo .menu_geral ul li ul li {
-				&.current_page_item a {
-					border-bottom: 1px solid $cor-branca;
-					width: 50%;
-					margin: 0 auto;
-				}
-			}
-			
-            .topo .menu_geral ul:not(.sub-menu) > li a {
-				text-align: center;
-				color: $cor-branca;
-				
-            }
-
-            .topo .menu_geral .menu_links > ul {
-                width: 250px;
-            }
-
-            .menu_links {
-                margin-top: 0;
-                padding-top: 0;
-                border-top: 0;
-			}
-			
-			.menu-menu-principal-container {
-				width: 100%;
-				z-index: 9999999999;
-				background: $cor-12;
-				opacity: 0.90;
-			}
-
-            .menu_geral .menu_links ul.menu {
-                padding-top: 0;
-                border-top: 0px;
-            }
-
             .topo input#menu:checked ~ .menu_geral .menu_links {
-				top: 60px;
-				right: 0%;
+				left: 0%;
             }
-
-            .menu_geral ul li ul {
-                position: relative;
-                visibility: visible;
-                background: transparent;
-				opacity: 1;
-				padding: 10px 0;
-				margin-top: 0;
-			}
 			
 			/*Rodapé*/
             .footer{
 				text-align: center;
-				.container {
-					.footer-container {
-						.footer-logo {
-							display: none;
+			}
+			main.home {
+				.banner {
+					height: auto;
+					.img-wp {
+						height: 450px;
+					}
+			
+					.icone-chave {
+						left: 2%;
+						font-size: 200px;
+	
+					}
+					.icone-chave2 {
+						right: 2%;
+						font-size: 200px;
+	
+					}
+			
+					.conteudo-wp {
+						left: 27%;
+						width: 50%;
+						
+						.titulo {
+							width: 60%;
+							p {
+								font-size: 30px !important;
+								line-height: 30px;
+							}
+							
+							
 						}
-						.footer-menu {
-							display: none;
+						.subtitulo {
+							p {
+								font-size: 25px !important;
+								line-height: 30px;
+							}
+							
 						}
-						.footer-endereco {
-							border-left: inherit;
+					}
+				}
+
+				.about-me {
+					.container {
+						.titulo1 {
+
+						}
+						.conteudo-wp {
+							p {
+
+							}
+						}
+						.imagem {
+							margin: 0 0 10px 0;
+							top: 0;
+						}
+					}
+				}
+
+				.skills {
+					.container {
+						.conteudo-wp {
+							p {
+
+							}
+						}	
+						.grafico {
+							.info {
+								margin-left: 0;
+							}
+						}
+					}
+				}
+
+				.portfolio {
+					.recent-works {
+						padding: 0px 0;
+						.bloco {
+							width: 45%;
+							.img-wp {
+								span {
+									button {
+										font-size: 15px;
+										height: 25px;
+										width: 85px;
+									}
+								}
+								&:hover span {
+									p {
+										font-size: 14px;
+										strong {
+											font-size: 14px;
+    										margin: 12px 0;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.curiosidades {
+					.container {
+						.conteudo-wp2 {
+							padding-left: 0;
+							.bloco {
+								font-size: 14px;
+							}
 						}
 					}
 				}
 			}
 			
-			.empreendimentos-slide {
-				height: auto;
-				.part-noticias {
-					.img-wp {
-						a {
-							.img-wp {
-								height: 260px;
-							}
-						}
-					}
-					.swiper-empreendimentos-slide {
-						.swiper-button-prev {
-							top: 8% !important;
-							
-							.svg-inline--fa {
-								height: 260px;
-							}
-						}
-						
-						.swiper-button-next {
-							top: 8% !important;
-							
-							.svg-inline--fa {
-								height: 260px;
-							}
-						}
-					}
-				}
-			}
 
 			
         }

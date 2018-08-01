@@ -317,75 +317,6 @@ html body {
     clear: both; }
   html body .typed-cursor.typed-cursor--blink {
     display: none !important; }
-  html body .empreendimentos-slide {
-    height: 425px;
-    width: 100%; }
-    html body .empreendimentos-slide .titulo-empre {
-      font-size: 35px;
-      color: #203162;
-      text-transform: uppercase;
-      margin-bottom: 20px; }
-    html body .empreendimentos-slide .part-noticias .img-wp a .img-wp {
-      display: block;
-      width: 100%;
-      height: 335px;
-      opacity: 0.6;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-bottom: 18px;
-      transition: all 500ms ease;
-      position: relative; }
-      html body .empreendimentos-slide .part-noticias .img-wp a .img-wp:hover {
-        opacity: inherit; }
-      html body .empreendimentos-slide .part-noticias .img-wp a .img-wp .logo {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        z-index: 1;
-        align-items: center;
-        transition: all 500ms ease; }
-        html body .empreendimentos-slide .part-noticias .img-wp a .img-wp .logo img {
-          top: 50%;
-          transform: translateY(-50%);
-          position: absolute; }
-    html body .empreendimentos-slide .part-noticias .swiper-empreendimentos-slide {
-      position: relative; }
-      html body .empreendimentos-slide .part-noticias .swiper-empreendimentos-slide .swiper-button-prev {
-        position: absolute;
-        left: 0;
-        height: 88%;
-        top: 6% !important;
-        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%…19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E"); }
-        html body .empreendimentos-slide .part-noticias .swiper-empreendimentos-slide .swiper-button-prev .svg-inline--fa {
-          color: #001550;
-          font-size: 45px;
-          height: 336px;
-          width: 37px;
-          background: rgba(255, 255, 255, 0.65);
-          transition: all 500ms ease;
-          padding: 10px; }
-          html body .empreendimentos-slide .part-noticias .swiper-empreendimentos-slide .swiper-button-prev .svg-inline--fa:hover {
-            background: #FFF; }
-      html body .empreendimentos-slide .part-noticias .swiper-empreendimentos-slide .swiper-button-next {
-        position: absolute;
-        height: 88%;
-        top: 6% !important;
-        right: 10px;
-        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%…2L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E"); }
-        html body .empreendimentos-slide .part-noticias .swiper-empreendimentos-slide .swiper-button-next .svg-inline--fa {
-          color: #001550;
-          font-size: 45px;
-          height: 336px;
-          width: 37px;
-          background: rgba(255, 255, 255, 0.65);
-          transition: all 500ms ease;
-          padding: 10px; }
-          html body .empreendimentos-slide .part-noticias .swiper-empreendimentos-slide .swiper-button-next .svg-inline--fa:hover {
-            background: #FFF; }
   html body main.home .banner {
     height: 550px;
     position: relative; }
@@ -396,6 +327,7 @@ html body {
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
+      background-attachment: fixed;
       filter: brightness(25%); }
     html body main.home .banner .icone-chave {
       position: absolute;
@@ -482,6 +414,20 @@ html body {
         display: flex;
         align-items: center;
         margin-left: 5px; }
+    html body main.home .skills .container .grafico .info .numero {
+      float: right; }
+      html body main.home .skills .container .grafico .info .numero .counter {
+        font-family: 'Open Sans Condensed';
+        font-weight: bold;
+        font-style: normal;
+        color: #FFF;
+        font-size: 15px; }
+      html body main.home .skills .container .grafico .info .numero .porcentagem {
+        font-family: 'Open Sans Condensed';
+        font-weight: bold;
+        font-style: normal;
+        color: #FFF;
+        font-size: 15px; }
     html body main.home .skills .container .grafico .info .bloco {
       height: 5px;
       width: 100%;
@@ -555,7 +501,11 @@ html body {
               font-family: 'Open Sans Condensed';
               font-weight: 300;
               font-style: italic;
-              font-size: 18px; }
+              font-size: 18px;
+              border-radius: 15px;
+              margin-top: 20px;
+              height: 30px;
+              width: 105px; }
           html body main.home .portfolio .recent-works .bloco .img-wp:hover span {
             position: absolute;
             background: #F3A712;
@@ -600,7 +550,8 @@ html body {
       font-style: normal;
       color: #F3A712;
       display: flex;
-      margin-bottom: 8px; }
+      margin-bottom: 8px;
+      font-size: 19px; }
       html body main.home .curiosidades .conteudo-wp2 .bloco:before {
         content: '';
         background-image: url(../images/icon1.png);
@@ -899,36 +850,22 @@ html body {
               -ms-transform: scale(1.3);
               transform: scale(1.3); }
 
-@media (max-width: 1199px) {
-  html > body .topo .logo-mobile {
-    display: block;
-    width: 88px;
-    height: auto;
-    margin-top: -15px; }
-    html > body .topo .logo-mobile img {
-      width: 100%;
-      display: block; } }
 @media (max-width: 991px) {
   html > body {
     /*Rodapé*/ }
-    html > body .topo .custom-logo-link {
-      display: none !important; }
-    html > body.home {
-      padding-top: 0px; }
-      html > body.home .topo.transparent {
-        transition: all 500ms ease;
-        background: transparent; }
-        html > body.home .topo.transparent .custom-logo-link {
-          transition: all 500ms ease;
-          display: none; }
-        html > body.home .topo.transparent .logo-mobile {
-          transition: all 500ms ease;
-          display: none; }
+    html > body .titulo1 {
+      font-size: 20px;
+      padding: 30px 0 15px 20px; }
+    html > body p {
+      font-size: 14px !important; }
+    html > body.home .topo.transparent {
+      transition: all 500ms ease;
+      background: transparent; }
     html > body .container-menu {
       display: block;
       position: relative;
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 22px;
       cursor: pointer; }
     html > body #menu {
       display: none; }
@@ -939,7 +876,8 @@ html body {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      transition: all .5s ease-in-out; }
+      transition: all .5s ease-in-out;
+      border-radius: 0px 5px 5px 0px; }
     html > body .menu-button:before, html > body .menu-button:after {
       content: "";
       position: absolute;
@@ -947,15 +885,16 @@ html body {
       width: 100%;
       height: 5px;
       background-color: #F3A712;
-      transition: all .5s ease-in-out; }
+      transition: all .5s ease-in-out;
+      border-radius: 0px 5px 5px 0px; }
     html > body .menu-button:before {
-      top: -12px; }
+      top: -9px; }
     html > body .menu-button:after {
-      top: 12px; }
+      top: 9px; }
     html > body .menu-button, html > body .menu-button:before, html > body .menu-button:after {
       box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3); }
     html > body #menu:checked + label .menu-button {
-      background-color: transparent;
+      background-color: rgba(0, 0, 0, 0);
       box-shadow: none; }
     html > body #menu:checked + label .menu-button:before {
       transform: rotate(45deg);
@@ -963,11 +902,6 @@ html body {
     html > body #menu:checked + label .menu-button:after {
       transform: rotate(135deg);
       top: 0; }
-    html > body .topo .logo-mobile {
-      display: block;
-      width: 88px;
-      height: auto;
-      margin-top: -15px; }
     html > body .topo {
       transition: all 500ms ease;
       position: fixed;
@@ -975,96 +909,80 @@ html body {
       left: 0;
       background: #2c2727;
       z-index: 999;
-      height: 60px; }
-      html > body .topo .menu-lateral #menu-menu-lateral li {
-        width: 50px;
-        height: 50px; }
-    html > body .menu_geral ul.menu > li:before {
-      display: none; }
-    html > body .menu_geral ul.menu {
-      border: inherit !important; }
-    html > body .topo .custom-logo-link {
-      display: block;
-      width: 80px;
-      top: 0px;
-      left: 50%;
-      margin-left: -40px; }
-    html > body .topo .menu_geral .menu_links {
-      position: fixed;
-      top: 45px;
-      top: -200%;
-      right: 0;
-      width: 100%;
-      height: calc(100% - 45px);
-      z-index: 1;
-      display: flex;
-      justify-content: flex-end;
-      -webkit-transition: 0.5s ease-out;
-      -moz-transition: 0.5s ease-out;
-      -o-transition: 0.5s ease-out;
-      transition: 0.5s ease-out;
-      transition: all 500ms ease; }
-    html > body .topo .menu_geral .menu_links ul li {
-      display: block;
-      background: #203162;
-      opacity: 0.90; }
-    html > body .topo .menu_geral .menu_links ul li a {
-      text-align: left; }
-    html > body .topo .menu_geral ul li ul li a {
-      border-bottom: inherit;
-      text-transform: initial;
-      color: #BABABA !important; }
-    html > body .topo .menu_geral ul li ul li.current_page_item a {
-      border-bottom: 1px solid #FFF;
-      width: 50%;
-      margin: 0 auto; }
-    html > body .topo .menu_geral ul:not(.sub-menu) > li a {
-      text-align: center;
-      color: #FFF; }
-    html > body .topo .menu_geral .menu_links > ul {
-      width: 250px; }
-    html > body .menu_links {
-      margin-top: 0;
-      padding-top: 0;
-      border-top: 0; }
-    html > body .menu-menu-principal-container {
-      width: 100%;
-      z-index: 9999999999;
-      background: #203162;
-      opacity: 0.90; }
-    html > body .menu_geral .menu_links ul.menu {
-      padding-top: 0;
-      border-top: 0px; }
+      height: 45px; }
+      html > body .topo .menu_geral .menu_info .menu_links {
+        position: fixed;
+        top: 45px;
+        left: -100%;
+        width: 100%;
+        height: calc(100% - 45px);
+        z-index: 1;
+        display: flex;
+        justify-content: flex-end;
+        -webkit-transition: 0.5s ease-out;
+        -moz-transition: 0.5s ease-out;
+        -o-transition: 0.5s ease-out;
+        transition: 0.5s ease-out;
+        transition: all 500ms ease; }
+        html > body .topo .menu_geral .menu_info .menu_links .menu-menu-principal-container {
+          width: 100%;
+          z-index: 9999999999;
+          background: #203162;
+          opacity: 0.90; }
+          html > body .topo .menu_geral .menu_info .menu_links .menu-menu-principal-container .menu {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap; }
+            html > body .topo .menu_geral .menu_info .menu_links .menu-menu-principal-container .menu .menu-item {
+              width: 100%;
+              padding: 20px 130px; }
     html > body .topo input#menu:checked ~ .menu_geral .menu_links {
-      top: 60px;
-      right: 0%; }
-    html > body .menu_geral ul li ul {
-      position: relative;
-      visibility: visible;
-      background: transparent;
-      opacity: 1;
-      padding: 10px 0;
-      margin-top: 0; }
+      left: 0%; }
     html > body .footer {
       text-align: center; }
-      html > body .footer .container .footer-container .footer-logo {
-        display: none; }
-      html > body .footer .container .footer-container .footer-menu {
-        display: none; }
-      html > body .footer .container .footer-container .footer-endereco {
-        border-left: inherit; }
-    html > body .empreendimentos-slide {
+    html > body main.home .banner {
       height: auto; }
-      html > body .empreendimentos-slide .part-noticias .img-wp a .img-wp {
-        height: 260px; }
-      html > body .empreendimentos-slide .part-noticias .swiper-empreendimentos-slide .swiper-button-prev {
-        top: 8% !important; }
-        html > body .empreendimentos-slide .part-noticias .swiper-empreendimentos-slide .swiper-button-prev .svg-inline--fa {
-          height: 260px; }
-      html > body .empreendimentos-slide .part-noticias .swiper-empreendimentos-slide .swiper-button-next {
-        top: 8% !important; }
-        html > body .empreendimentos-slide .part-noticias .swiper-empreendimentos-slide .swiper-button-next .svg-inline--fa {
-          height: 260px; } }
+      html > body main.home .banner .img-wp {
+        height: 450px; }
+      html > body main.home .banner .icone-chave {
+        left: 2%;
+        font-size: 200px; }
+      html > body main.home .banner .icone-chave2 {
+        right: 2%;
+        font-size: 200px; }
+      html > body main.home .banner .conteudo-wp {
+        left: 27%;
+        width: 50%; }
+        html > body main.home .banner .conteudo-wp .titulo {
+          width: 60%; }
+          html > body main.home .banner .conteudo-wp .titulo p {
+            font-size: 30px !important;
+            line-height: 30px; }
+        html > body main.home .banner .conteudo-wp .subtitulo p {
+          font-size: 25px !important;
+          line-height: 30px; }
+    html > body main.home .about-me .container .imagem {
+      margin: 0 0 10px 0;
+      top: 0; }
+    html > body main.home .skills .container .grafico .info {
+      margin-left: 0; }
+    html > body main.home .portfolio .recent-works {
+      padding: 0px 0; }
+      html > body main.home .portfolio .recent-works .bloco {
+        width: 45%; }
+        html > body main.home .portfolio .recent-works .bloco .img-wp span button {
+          font-size: 15px;
+          height: 25px;
+          width: 85px; }
+        html > body main.home .portfolio .recent-works .bloco .img-wp:hover span p {
+          font-size: 14px; }
+          html > body main.home .portfolio .recent-works .bloco .img-wp:hover span p strong {
+            font-size: 14px;
+            margin: 12px 0; }
+    html > body main.home .curiosidades .container .conteudo-wp2 {
+      padding-left: 0; }
+      html > body main.home .curiosidades .container .conteudo-wp2 .bloco {
+        font-size: 14px; } }
 
 /*
 

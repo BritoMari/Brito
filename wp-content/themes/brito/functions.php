@@ -11,11 +11,12 @@ function carrega_scripts(){
 	wp_enqueue_style( 'style', 			get_template_directory_uri(). '/assets/css/style.css', array(), '1.0', 'all');
 	
 	// JS
-	wp_enqueue_script( 'bootstrap',     get_template_directory_uri(). '/assets/js/bootstrap.min.js', array('jquery'), null, true);
-	wp_enqueue_script( 'swiper', 		get_template_directory_uri(). '/assets/js/swiper.min.js', array('jquery'), null, true);	
+	wp_enqueue_script( 'bootstrap',     get_template_directory_uri(). '/assets/js/vendor/bootstrap.min.js', array('jquery'), null, true);
+	wp_enqueue_script( 'swiper', 		get_template_directory_uri(). '/assets/js/vendor/swiper.min.js', array('jquery'), null, true);	
 	wp_enqueue_script( 'video', 		get_template_directory_uri(). '/assets/js/vendor/jquery.vide.min.js', array('jquery'), null, true);	
 	wp_enqueue_script( 'waypoints', 	get_template_directory_uri(). '/assets/js/vendor/waypoints.min.js', array('jquery'), null, true);
-	wp_enqueue_script( 'counter', 		get_template_directory_uri(). '/assets/js/vendor/jquery.counterup.min.js', array('jquery'), null, true);		
+	wp_enqueue_script( 'counter', 		get_template_directory_uri(). '/assets/js/vendor/jquery.counterup.min.js', array('jquery'), null, true);	
+	wp_enqueue_script( 'typed', 		get_template_directory_uri(). '/assets/js/vendor/typed.min.js', array('jquery'), null, true);	
 	wp_enqueue_script( 'scripts', 		get_template_directory_uri(). '/assets/js/scripts.js', array('jquery'), null, true);
 }
 add_action( 'wp_enqueue_scripts', 'carrega_scripts');

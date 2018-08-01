@@ -56,8 +56,9 @@
 						<img class="icone" src="<?php the_sub_field('icone'); ?>);" alt="<?php the_sub_field('tag_alt'); ?>"></>
 						<p class="texto"><?php the_sub_field('texto'); ?></p>
 					</div>
-
-					<span class="bloco"><a class="contador inativo" style="width: <?php the_sub_field('bloco'); ?>"></a></span>
+					<div class="numero"><span class="counter"><?php the_sub_field('bloco'); ?></span><span class="porcentagem">%</span></div>
+					<span class="bloco"><a class="contador inativo" style="width: <?php the_sub_field('bloco'); ?>%"></a></span>
+					
 				</div>
 				
 				<?php 
@@ -128,6 +129,7 @@
 		</div>
 	</section>
 
+	<?php /*
 	<section class="blog" id="blog">
 		<div class="container">
 			<h1 class="titulo1"><?php the_field('titulo_blog'); ?></h1>
@@ -170,5 +172,6 @@
 		</div>
 		
 	</section>
+	*/ ?>
 </main>	
 <?php get_footer(); ?>

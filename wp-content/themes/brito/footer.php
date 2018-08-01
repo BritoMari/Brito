@@ -33,21 +33,7 @@
 		</div>
 	</div>
 	
-	<script type='text/javascript' src="/brito/wp-content/themes/brito/assets/js/vendor/bootstrap.min.js"></script>
-		
-	<script type='text/javascript' src="/brito/wp-content/themes/brito/assets/js/vendor/swiper.min.js"></script>
-
-	<script type='text/javascript' src="/brito/wp-content/themes/brito/assets/js/vendor/jquery.vide.min.js"></script>
-			
-	<script type='text/javascript' src="/brito/wp-content/themes/brito/assets/js/vendor/waypoints.min.js"></script>
-
-	<script type='text/javascript' src="/brito/wp-content/themes/brito/assets/js/vendor/jquery.counterup.min.js"></script>
-
-	<script type='text/javascript' src="/brito/wp-content/themes/brito/assets/js/vendor/typed.min.js"></script>
-
-	<script type='text/javascript' src="/brito/wp-content/themes/brito/assets/js/scripts.js?v=<?php echo date('dmYHi'); ?>"></script>
-
-
 </footer>
+<?php wp_footer(); ?> 
 </body>
 </html>
