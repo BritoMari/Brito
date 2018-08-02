@@ -5,6 +5,18 @@ html {
 		}
 
         @media(max-width: 991px) {
+			&.menu-aberto {
+				main {
+					//filter: blur(2px);
+					transform: translateX(170px);
+					transition: all 500ms ease;
+				}
+					.topo {
+						background: $cor-grafite !important;
+						height: 45px !important;
+					}
+
+			} 
 			.titulo1 {
 				font-size: 20px;
 				padding: 30px 0 15px 20px;
@@ -83,13 +95,15 @@ html {
                 background: $cor-grafite;
                 z-index: 999;
 				height: 45px;
+				border-radius: 0;
 				.menu_geral {
 					.menu_info {
 						.menu_links {
 							position: fixed;
+							//box-shadow: 2px 10px 25px $cor-preta;
 							top: 45px;
 							left: -100%;
-							width: 100%;
+							width: 37%;
 							height: calc(100% - 45px);
 							z-index: 1;
 							display: flex;
@@ -102,18 +116,22 @@ html {
 							.menu-menu-principal-container {
 								width: 100%;
 								z-index: 9999999999;
-								background: $cor-12;
-								opacity: 0.90;
+								background: $cor-grafite;
 								.menu {
 									display: flex;
 									width: 100%;
 									flex-wrap: wrap;
 									.menu-item {
 										width: 100%;
-										padding: 20px 130px;
+										padding: 11px !important;
 										a {
-
+											text-align: start !important;
+											font-size: 17px !important; 
 										}
+									}
+									.bloco {
+										display: flex !important;
+										margin-top: 25px;
 									}
 								}
 							}

@@ -45,7 +45,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, secti
 
 body {
   line-height: 1;
-  background: #29335C !important; }
+  background: #29335C; }
 
 ol, ul {
   list-style: none; }
@@ -214,7 +214,8 @@ html body {
   /*home*/ }
   html body.home .topo.transparent {
     background: transparent;
-    box-shadow: none; }
+    box-shadow: none;
+    height: 0; }
   html body .topo {
     width: 100%;
     height: 60px;
@@ -278,6 +279,10 @@ html body {
           padding: 0; }
       html body .topo .container .menu_geral .menu_info .menu_links .menu-menu-principal-container .menu .current_page_item a {
         color: #2c2727; }
+      html body .topo .container .menu_geral .menu_info .menu_links .menu-menu-principal-container .menu .bloco {
+        display: inline-block; }
+        html body .topo .container .menu_geral .menu_info .menu_links .menu-menu-principal-container .menu .bloco .menu-item {
+          padding: 0; }
   html body .active {
     color: #FFF !important; }
     html body .active:after {
@@ -458,7 +463,7 @@ html body {
     html body main.home .portfolio .recent-works {
       display: flex;
       flex-wrap: wrap;
-      padding: 60px 0;
+      padding: 10px 0;
       justify-content: space-around; }
       html body main.home .portfolio .recent-works .bloco {
         width: 30%;
@@ -853,6 +858,12 @@ html body {
 @media (max-width: 991px) {
   html > body {
     /*Rodapé*/ }
+    html > body.menu-aberto main {
+      transform: translateX(170px);
+      transition: all 500ms ease; }
+    html > body.menu-aberto .topo {
+      background: #2c2727 !important;
+      height: 45px !important; }
     html > body .titulo1 {
       font-size: 20px;
       padding: 30px 0 15px 20px; }
@@ -909,12 +920,13 @@ html body {
       left: 0;
       background: #2c2727;
       z-index: 999;
-      height: 45px; }
+      height: 45px;
+      border-radius: 0; }
       html > body .topo .menu_geral .menu_info .menu_links {
         position: fixed;
         top: 45px;
         left: -100%;
-        width: 100%;
+        width: 37%;
         height: calc(100% - 45px);
         z-index: 1;
         display: flex;
@@ -927,15 +939,20 @@ html body {
         html > body .topo .menu_geral .menu_info .menu_links .menu-menu-principal-container {
           width: 100%;
           z-index: 9999999999;
-          background: #203162;
-          opacity: 0.90; }
+          background: #2c2727; }
           html > body .topo .menu_geral .menu_info .menu_links .menu-menu-principal-container .menu {
             display: flex;
             width: 100%;
             flex-wrap: wrap; }
             html > body .topo .menu_geral .menu_info .menu_links .menu-menu-principal-container .menu .menu-item {
               width: 100%;
-              padding: 20px 130px; }
+              padding: 11px !important; }
+              html > body .topo .menu_geral .menu_info .menu_links .menu-menu-principal-container .menu .menu-item a {
+                text-align: start !important;
+                font-size: 17px !important; }
+            html > body .topo .menu_geral .menu_info .menu_links .menu-menu-principal-container .menu .bloco {
+              display: flex !important;
+              margin-top: 25px; }
     html > body .topo input#menu:checked ~ .menu_geral .menu_links {
       left: 0%; }
     html > body .footer {

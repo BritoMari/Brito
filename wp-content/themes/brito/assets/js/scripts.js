@@ -1,6 +1,17 @@
 (function(){
   "use strict";
 
+/*Adicionando class no  para ficar borrado ao abrir o menu mobile */
+  jQuery('input#menu').on('change', function () {
+    var isChecked = jQuery(this).is(':checked');
+    console.log('isChecked: ', isChecked);
+    if (isChecked) {
+        jQuery('body').addClass('menu-aberto');
+    } else {
+        jQuery('body').removeClass('menu-aberto');
+    }
+  });
+
 /*Fazendo topo ficar visível ao rolar a página*/
   var $ = jQuery;
   jQuery(window).bind('scroll', function () {
@@ -36,47 +47,28 @@
      }
    }
  });
-})();
-
-
-function onScroll(event){
-  var scrollPos = jQuery(document).scrollTop();
-  jQuery('.menu a').each(function () {
-    var currLink = jQuery(this);
-    var refElement = jQuery(currLink.attr("href"));
-    if (refElement.length && refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-      jQuery('.menu ul li a').removeClass("active");
-      currLink.addClass("active");
-    }
-    else{
-      currLink.removeClass("active");
-    }
-  });
+  /* menu - rolar ao clicar */
+  function onScroll(event){
+    var scrollPos = jQuery(document).scrollTop();
 }
- /* menu - rolar ao clicar */
- jQuery(document).on("scroll", onScroll);
- jQuery('.menu a[href^="#"]').on('click', function (e) {
-     e.preventDefault();
-     jQuery(document).off("scroll");
-     
-     jQuery('.menu a').each(function () {
-         jQuery(this).removeClass('active');
-     });
-     jQuery(this).addClass('active');
-   
-     var target = jQuery(this).attr('href');
-     var $target = jQuery(target);
-     var position = $target.offset().top - 60
-     
-     jQuery('html, body').stop().animate({
-         'scrollTop': position
-     }, 500, 'swing', function () {
-         // window.location.hash = target;
-         // jQuery(document).on("scroll", onScroll);
-     });
 
-     return false;
- }); 
+  jQuery(document).on("scroll", onScroll);
+  jQuery('.menu-item a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+      jQuery(document).off("scroll");
+      
+      var target = jQuery(this).attr('href');
+      var $target = jQuery(target);
+      var position = $target.offset().top - 60
+      
+      jQuery('html, body').stop().animate({
+          'scrollTop': position
+      }, 500, 'swing', function () {
+          // window.location.hash = target;
+          // jQuery(document).on("scroll", onScroll);
+      });
 
+      return false;
+  }); 
 
- 
+})(); 

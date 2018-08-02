@@ -3,6 +3,7 @@
   .topo.transparent {
     background: transparent;
     box-shadow: none;
+    height: 0;
  }
 }
 .topo {
@@ -85,6 +86,12 @@
               
               .current_page_item  a {
                 color: $cor-grafite;
+              }
+              .bloco {
+                display: inline-block;
+                .menu-item {
+                  padding: 0;
+                }
               }
             }
           }

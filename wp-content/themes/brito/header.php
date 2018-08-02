@@ -7,6 +7,18 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     <title><?php the_title(); ?> - Brito</title>
+    <meta name=”description” content="Olá, sou Mariana Brito Desenvolvedora Web e..." />
+    <meta property="og:title" content="Brito">
+    <meta property="og:site_name" content="Brito">
+    <meta property="og:description" content="Olá, sou Mariana Brito Desenvolvedora Web e...">
+    <meta property="og:image" content="http://www.brito.com.br/image/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="354">
+    <meta property="og:image:height" content="354">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.brito.com.br">
+
+    <title><?php the_title(); ?> - Brito</title>
     
     <?php wp_head(); ?>
     
@@ -41,12 +53,14 @@
                             <li class="menu-item ativo">
                                 <a href="https://medium.com/@marianabriito" target="_blank">Blog</a>
                             </li>
+                            <div class="bloco">
                             <li class="menu-item">
                                 <a href="https://github.com/BritoMari" target="_blank" class="icon"><i class="fab fa-github-alt"></i></a>
                             </li>
                             <li class="menu-item">
                                 <a href="https://codepen.io/BritoMari/" target="_blank" class="icon"><i class="fab fa-codepen"></i></a>
                             </li>
+                            </div>
                         </ul>
                     </div>  
 				</div>  
